@@ -8,7 +8,7 @@ router.get('/', function(req, res) {
 
 // For uploading the image
 router.post('/', function(req, res) {
-    res.json({ message: 'For uploading the image' });
+    res.json(req.body);
 });
 
 module.exports = router
